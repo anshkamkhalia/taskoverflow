@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+}
+
+
+h2 {
+    font-size: 3rem;
+}
+
+/* Tasks */
+.todos {
+    padding: 1.5rem;
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Row */
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    accent-color: green;
+}
+
+.todo-item label {
+    flex: 1;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* ADD TASK BTN */
+
+.add-task {
+    display: flex;
+    margin-bottom: 1.5rem;
+    gap: 0.5rem;
+    
+}
+
+.add-task input[type="text"] {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    font-family: 'Outfit', sans-serif;
+}
+
+.add-task input[type="text"]:focus {
+    border-color: rgb(49, 255, 183);
+}
+
+.add-task button {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+    background-color: rgb(49, 255, 183);
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-task button:hover {
+    background-color: rgb(35, 225, 160);
+}
